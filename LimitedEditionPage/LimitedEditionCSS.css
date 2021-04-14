@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins',sans-serif;
+}
+
+
+nav{
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  height: 100px;
+  margin-bottom: 40%;
+  margin-right: 80px;
+  
+
+}
+
+
+
+nav ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin-left: 700px;
+  
+}
+nav ul li a{
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  margin-left: 50px;
+}
+
+nav ul li a:hover{
+  opacity: .6;
+
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #131313;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 1200px;
+  transform-style: preserve-3d;
+}
+
+.container .box,
+.container .boxAdidas{
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 40px;
+  background: #232323;
+  border-radius: 20px;
+  transform-style: preserve-3d;
+}
+
+.container .box::before{
+  content: "Nike";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 6em;
+  font-weight: 900;
+  color: #fff;
+  font-style: italic;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.container .boxAdidas::before{
+  content: "Adidas";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 4.5em;
+  font-weight: 900;
+  color: #fff;
+  font-style: italic;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.container .box::after,
+.container .boxAdidas::after{
+  content: "SHOES";
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 5em;
+  font-weight: 900;
+  color: #fff;
+  font-style: italic;
+  opacity: 0;
+  transition: 0.5s;
+}
+.container .box:hover::after,
+.container .box:hover::before,
+.container .boxAdidas:hover::after,
+.container .boxAdidas:hover::before{
+  opacity: 0.04;
+}
+
+.container .box .name,
+.container .boxAdidas .name {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  transform-style: preserve-3d;
+  transform: translate3d(0,0,75px);
+  transition: 0.5s;
+  opacity: 0;
+  z-index: 10;
+}
+
+.container .box:hover .name,
+.container .boxAdidas:hover .name{
+  top: 40px;
+  opacity: 1;
+}
+
+.container .box .buy ,
+.container .boxAdidas .buy{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform-style: preserve-3d;
+  transform: translate3d(-50%,0,75px);
+  color: #333;
+  background: #333;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  transform: 0.5s;
+  opacity: 0;
+  z-index: 10;
+}
+
+.container .box:hover .buy ,
+.container .boxAdidas:hover .buy {
+  bottom: 30px;
+  opacity: 1;
+}
+
+.container .box .circle,
+.container .boxAdidas .circle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  transition: 0.5s;
+  background: #fff;
+  transform-style: preserve-3d;
+  z-index: 10;
+  opacity: 1;
+  transform: translate3d(-50%, -50%, 50px);
+}
+
+.container .box .product,
+.container .boxAdidas .product{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 300px;
+  z-index: 10;
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  transform: translate3d(-50%, -50%, 50px) rotate(-15deg);
+}
+
+.container .box:nth-child(1) .circle,
+.container .box:nth-child(1) .buy{
+  background: #1e6db8;
+}
+
+.container .box:nth-child(2) .circle,
+.container .box:nth-child(2) .buy{
+  background: #FFFFE0;
+}
+
+.container .boxAdidas .circle,
+.container .boxAdidas .buy{
+  background: #fb4b4f;
+}

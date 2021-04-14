@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "be Vietnam";
+    overflow: hidden;
+}
+html
+{
+    font-size: 10px;
+    background:#cc021c;
+    color: #fff;
+}
+
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    height: 100px;
+}
+
+
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    margin-left: 700px;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    margin-left: 50px;
+}
+
+nav ul li a:hover{
+    opacity: .6;
+
+}
+
+
+.header_main{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 400px 1fr;
+    margin-left: 100px;
+}
+
+.header_main_content_h1{
+    font-size:30px;
+    margin-top: 10px;
+    width: 80%;
+
+}
+
+.header_main_content_p{
+    font-size: 18px;
+}
+.acart{
+    font-size: 25px;
+    padding: 14px 15px;
+    border: none;
+    outline: none;
+    color:#fff;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-top: 50px;
+    background-color:transparent;
+
+}
+.acart:hover{
+    border:2px solid white;
+    
+
+}
+
+.bnow{
+    font-size: 25px;
+    padding: 14px 20px;
+    border:none;
+    outline: none;
+    color: red;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-top: 50px;
+    background-color:#fff;
+}
+
+.bnow:hover{
+    opacity: .6;
+}
+
+.header_main img{
+    margin-left: 100px;
+    margin-top: 5px;
+    width:700px;
+    height: 500px;
+    display: flex;
+    
+}
