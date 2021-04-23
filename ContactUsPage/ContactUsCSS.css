@@ -158,27 +158,16 @@
 .contactForm .inputBox input[type="submit"]
 {
     width: 100px;
-    /*background: #00bcd4;*/
     color: #fff;
     border: none;
     cursor: pointer;
     padding: 10px;
     font-size: 18px;
-
     background-color: red;
-    
     /* Create the gradient. */
     background-image: linear-gradient(to right,#1b1212,#ca0b0b);
-    
-    /* Set the background size and repeat properties. */
     background-size: 100%;
     background-repeat: repeat;
-    
-    /* Use the text as a mask for the background. */
-    /* This will show the gradient as a text color rather than element bg. */
-    /*-webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-background-clip: text;*/
 }
 
 @media (max-width: 991px)
