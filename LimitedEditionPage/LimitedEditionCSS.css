@@ -15,11 +15,7 @@ nav{
   height: 100px;
   margin-bottom: 40%;
   margin-right: 80px;
-  
-
 }
-
-
 
 nav ul{
   display: flex;
@@ -27,8 +23,8 @@ nav ul{
   align-items: center;
   list-style: none;
   margin-left: 700px;
-  
 }
+
 nav ul li a{
   text-decoration: none;
   font-size: 20px;
@@ -39,7 +35,6 @@ nav ul li a{
 
 nav ul li a:hover{
   opacity: .6;
-
 }
 
 body{
@@ -51,13 +46,11 @@ body{
 }
 
 .container {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   width: 1200px;
-  transform-style: preserve-3d;
 }
 
 .container .box,
@@ -68,7 +61,6 @@ body{
   margin: 40px;
   background: #232323;
   border-radius: 20px;
-  transform-style: preserve-3d;
 }
 
 .container .box::before{
@@ -110,6 +102,7 @@ body{
   opacity: 0;
   transition: 0.5s;
 }
+
 .container .box:hover::after,
 .container .box:hover::before,
 .container .boxAdidas:hover::after,
@@ -125,11 +118,8 @@ body{
   text-align: center;
   color: #fff;
   width: 100%;
-  transform-style: preserve-3d;
-  transform: translate3d(0,0,75px);
   transition: 0.5s;
   opacity: 0;
-  z-index: 10;
 }
 
 .container .box:hover .name,
@@ -143,7 +133,6 @@ body{
   position: absolute;
   bottom: 0;
   left: 50%;
-  transform-style: preserve-3d;
   transform: translate3d(-50%,0,75px);
   color: #333;
   background: #333;
@@ -152,7 +141,6 @@ body{
   text-decoration: none;
   transform: 0.5s;
   opacity: 0;
-  z-index: 10;
 }
 
 .container .box:hover .buy ,
@@ -171,8 +159,6 @@ body{
   border-radius: 50%;
   transition: 0.5s;
   background: #fff;
-  transform-style: preserve-3d;
-  z-index: 10;
   opacity: 1;
   transform: translate3d(-50%, -50%, 50px);
 }
@@ -183,9 +169,7 @@ body{
   top: 50%;
   left: 50%;
   max-width: 300px;
-  z-index: 10;
   transition: 0.5s;
-  transform-style: preserve-3d;
   transform: translate3d(-50%, -50%, 50px) rotate(-15deg);
 }
 
