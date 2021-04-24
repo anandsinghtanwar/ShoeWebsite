@@ -185,4 +185,8 @@
     {
         width: 100%;
     }
+    .contact nav{
+        margin-left: 40px;
+        flex-direction: column;
+    }
 }
